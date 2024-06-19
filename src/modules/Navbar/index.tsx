@@ -29,34 +29,6 @@ export function Navbar({ menuOpen, setMenuOpen }: Props) {
       >
         <MenuOutlined />
       </button>
-      <div className="flex flex-row items-center gap-1 sm:hidden md:hidden lg:mr-[8vw]">
-        <Link to={"/members"}>
-          <Button text={"Members"} />
-        </Link>
-        <a href="https://reports.zAcademy.dev/">
-          <Button text={"Reports"} />
-        </a>
-        <a href="https://research.zAcademy.dev/">
-          <Button text={"Research"} />
-        </a>
-        <a href="https://blog.zAcademy.dev/">
-          <Button text={"Blog"} />
-        </a>
-        <Link to={"/fellowships"}>
-          <Button text={"Fellowships"} />
-        </Link>
-        <Link to={"/zBlock1"}>
-          <Button text={"zBlock1"} />
-        </Link>
-        <Link to={"/zBlock2"}>
-          <Button text={"zBlock2"} />
-        </Link>
-        <Link to={"/contact-us"}>
-          <button className="px-8 py-3 rounded-xl text-md text-darkgreen text-bold bg-emeraldlight bg-opacity-25 hover:bg-opacity-5 hover:text-emeraldlight duration-700">
-            Contact Us
-          </button>
-        </Link>
-      </div>
     </div>
   );
 }
