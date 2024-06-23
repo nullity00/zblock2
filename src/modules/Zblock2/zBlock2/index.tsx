@@ -23,31 +23,31 @@ function ZBlock2Modules() {
       <div className="grid grid-cols-5 sm:flex sm:flex-col gap-20">
         <div className="col-span-2">
           <div className="lg:py-4 lg:my-8 md:my-12">
-            <h1 className="lg:leading-normal lg:text-7xl md:text-4xl sm:text-4xl font-bold lg:mb-10">
+            <h1 className="lg:leading-normal lg:text-7xl md:text-4xl sm:text-4xl sm:text-center sm:leading-normal font-bold lg:mb-10">
               zBlock2: <br /> ZK Auditing, Evolved!
             </h1>
           </div>
-          <div className="lg:hidden">
+          {/* <div className="lg:hidden">
             <Lottie animationData={logo} className="md:hidden lg:hidden" />
-          </div>
+          </div> */}
         </div>
         <div className="col-span-3 sm:hidden">
           <Lottie animationData={logo} className="sm:hidden h-[30rem]" />
           {/* <img src="./zblock1.svg" className="h-[30rem]"></img> */}
         </div>
       </div>
-      <div className="mr-32">
+      <div className="lg:mr-32">
         <h1
-          className="text-5xl font-bold text-center mt-40 mb-20"
+          className="text-5xl  font-bold text-center mt-40 mb-20"
           id="module-1"
         >
           In a nutshell,
         </h1>
-        <div className="grid grid-cols-5">
-          <div className="col-span-2">
+        <div className="grid lg:grid-cols-5 gap-8">
+          <div className="lg:col-span-2">
             <img src="./cross.svg" className="h-[24rem]" />
           </div>
-          <div className="col-span-3">
+          <div className="lg:col-span-3">
             <p className="text-gray-600 text-justify">
               From Jan 2024 to May 2024, we held our second zero-knowledge
               auditing fellowship centered around the PSE-Halo2 development
