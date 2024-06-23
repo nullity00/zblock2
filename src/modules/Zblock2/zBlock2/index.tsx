@@ -11,112 +11,122 @@ import {
   m2report,
 } from "../Data/zblock2";
 import { Discussion, VideoSection, Report } from "../utils";
+import Lottie from "lottie-react";
+import logo from "./logo.json";
 
 function ZBlock2Modules() {
   return (
     <>
-      <div className="grid grid-cols-3 sm:flex sm:flex-col gap-20">
-        {/* <div className="bg-green-100 p-10 rounded-lg shadow-md col-span-1">
-          <h1 id="session1" className="text-2xl font-semibold mb-8">
-            In a nutshell
-          </h1>
-          <a href="#module-1" className="text-gray-600 hover:underline">
-            Module 1 : ZK in Context
-          </a>
-          <br />
-          <a href="#module-2" className="text-gray-600 hover:underline">
-            Module 2 : Rate Limiting Nullifier
-          </a>
-          <br />
-          <a href="#module-3" className="text-gray-600 hover:underline">
-            Module 3 : Spartan ECDSA
-          </a>
-          <br />
-        </div> */}
-        {/* Right Column */}
-
+      <div className="grid grid-cols-5 sm:flex sm:flex-col gap-20">
         <div className="col-span-2">
-          <h1 className="md:leading-normal sm:leading-normal lg:leading-tight lg:text-5xl md:text-3xl sm:text-3xl font-bold lg:mb-10">
-            zBlock2
-          </h1>
+          <div className="lg:py-4 lg:my-8 md:my-12">
+            <h1 className="lg:leading-normal lg:text-7xl md:text-4xl sm:text-4xl font-bold lg:mb-10">
+              zBlock2: <br /> ZK Auditing, Evolved!
+            </h1>
+          </div>
           <div className="lg:hidden">
-            <img src="./zblock1.svg" className="h-[15rem]"></img>
+            <Lottie animationData={logo} className="md:hidden lg:hidden" />
           </div>
-          <p className="text-gray-600 text-justify">
-            From Jan 2024 to May 2024, we conducted our second Zero Knowledge
-            Auditing cohort that kicked off with foundational concepts in
-            complexity theory and Zero Knowledge Proofs (ZKPs) pivoting to Halo2
-            framework. Participants engaged in hands-on exercises with Halo2, a
-            tool for creating ZKP circuits, to deepen their understanding.
-            <br /> <br /> The cohort's audit project was the Summa Protocol by
-            the Privacy & Scaling Explorations team. Summa Protocol is a
-            blockchain-based solution designed to provide Proof of Solvency for
-            financial entities, ensuring they have sufficient assets to cover
-            their liabilities. It leverages cryptographic techniques to verify
-            solvency transparently and securely without revealing sensitive
-            financial data. This audit took 120 days to complete, spanning over
-            two Versions.
-            <br />
-            <br /> During the cohort, fellows also developed new Halo2 tooling
-            and enhanced the usability of existing tools by improving the
-            documentation and code for projects like Polyexen-demo and
-            Halo2-analyzer. At the end of the audit, outstanding fellows were
-            awarded for their exceptional contributions and performance
-            throughout the cohort.
-          </p>
         </div>
-        <div className="col-span-1 sm:hidden">
-          <img src="./zblock1.svg" className="h-[30rem]"></img>
+        <div className="col-span-3 sm:hidden">
+          <Lottie animationData={logo} className="sm:hidden h-[30rem]" />
+          {/* <img src="./zblock1.svg" className="h-[30rem]"></img> */}
         </div>
       </div>
-
-      <h1 className="text-4xl font-bold text-center mt-40" id="module-1">
-        Module 1
-      </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-1 gap-12 mt-12">
-        <div className="col-span-1">
-          <h1 id="session1" className="text-2xl font-bold">
-            Sessions
-          </h1>
-          <VideoSection videoData={m1video} />
-        </div>
-        <div className="col-span-1">
-          <h1 className="text-2xl font-bold">Guest Lectures</h1>
-          <VideoSection videoData={m1guestLectures} />
-          <h1 id="discussion1" className="text-2xl font-bold mb-4">
-            Discussion
-          </h1>
-          <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
-            <Discussion chat={m1discussion} />
+      <div className="mr-32">
+        <h1 className="text-4xl font-bold text-center mt-40 mb-20" id="module-1">
+          In a nutshell ...
+        </h1>
+        <p className="text-gray-600 text-justify mx-24">
+          From Jan 2024 to May 2024, we held our second zero-knowledge auditing
+          fellowship centered around the PSE-Halo2 development framework and the
+          KZG commitment scheme. Participants engaged in hands-on exercises,
+          sync and async discussions, and technical sessions by devs, auditors,
+          and distinguished guests.
+          <br />
+          <br />
+          The focus of the audit in this cohort was the Summa Protocol developed
+          at the{" "}
+          <a
+            href="https://pse.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-bold hover:underline duration-700"
+          >
+            Privacy & Scaling Explorations
+          </a>{" "}
+          group of the EF. The{" "}
+          <a
+            href="https://summa.gitbook.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-bold hover:underline duration-700"
+          >
+            Summa Protocol
+          </a>{" "}
+          is a blockchain-based solution for providing proof of solvency for
+          financial entities, ensuring they have sufficient assets to cover
+          their liabilities. It leverages cryptographic techniques with the aim
+          to verify solvency transparently and securely, and without revealing
+          sensitive personal financial data.
+          <br />
+          <br />
+          This audit took 120 days to complete, covering two versions of the
+          Summa protocol. During the cohort, fellows also developed new Halo2
+          tooling and enhanced the usability of existing tools by improving the
+          documentation and code for projects like Polyexen-demo and
+          Halo2-analyzer. At the end of the audit, exceptional fellows were
+          awarded for their outstanding contributions and performance throughout
+          the cohort.
+        </p>
+        <h1 className="text-4xl font-bold text-center mt-40" id="module-1">
+          Module 1
+        </h1>
+        <div className="grid grid-cols-2 sm:grid-cols-1 gap-12 mt-12">
+          <div className="col-span-1">
+            <h1 id="session1" className="text-2xl font-bold">
+              Sessions
+            </h1>
+            <VideoSection videoData={m1video} />
           </div>
-          <h1 className="text-2xl font-bold my-4">Audit Reports</h1>
-          <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
-            <Report report={m1report} />
+          <div className="col-span-1">
+            <h1 className="text-2xl font-bold">Guest Lectures</h1>
+            <VideoSection videoData={m1guestLectures} />
+            <h1 id="discussion1" className="text-2xl font-bold mb-4">
+              Discussion
+            </h1>
+            <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
+              <Discussion chat={m1discussion} />
+            </div>
+            <h1 className="text-2xl font-bold my-4">Audit Reports</h1>
+            <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
+              <Report report={m1report} />
+            </div>
           </div>
         </div>
-      </div>
 
-      <h1 className="text-4xl font-bold text-center mt-40" id="module-2">
-        Module 2
-      </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-1 gap-12 mt-12">
-        <div className="col-span-1">
-          <h1 className="text-2xl font-bold">Sessions</h1>
-          <VideoSection videoData={m2video} />
-          <h1 id="discussion1" className="text-2xl font-bold mb-4">
-            Discussion
-          </h1>
-          <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
-            <Discussion chat={m2discussion} />
+        <h1 className="text-4xl font-bold text-center mt-40" id="module-2">
+          Module 2
+        </h1>
+        <div className="grid grid-cols-2 sm:grid-cols-1 gap-12 mt-12">
+          <div className="col-span-1">
+            <h1 className="text-2xl font-bold">Sessions</h1>
+            <VideoSection videoData={m2video} />
+            <h1 id="discussion1" className="text-2xl font-bold mb-4">
+              Discussion
+            </h1>
+            <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
+              <Discussion chat={m2discussion} />
+            </div>
           </div>
-        </div>
-        <div className="col-span-1">
-          <h1 className="text-2xl font-bold">Guest Lectures</h1>
-          <VideoSection videoData={m2guestLectures} />
+          <div className="col-span-1">
+            <h1 className="text-2xl font-bold">Guest Lectures</h1>
+            <VideoSection videoData={m2guestLectures} />
 
-          <h1 className="text-2xl font-bold my-4">Audit Reports</h1>
-          <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
-            <Report report={m2report} />
+            <h1 className="text-2xl font-bold my-4">Audit Reports</h1>
+            <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
+              <Report report={m2report} />
+            </div>
           </div>
         </div>
       </div>
