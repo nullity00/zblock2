@@ -41,50 +41,58 @@ function ZBlock2Modules() {
           className="text-5xl font-bold text-center mt-40 mb-20"
           id="module-1"
         >
-          In a nutshell ...
+          In a nutshell,
         </h1>
-        <p className="text-gray-600 text-justify mx-16">
-          From Jan 2024 to May 2024, we held our second zero-knowledge auditing
-          fellowship centered around the PSE-Halo2 development framework and the
-          KZG commitment scheme. Participants engaged in hands-on exercises,
-          sync and async discussions, and technical sessions by devs, auditors,
-          and distinguished guests.
-          <br />
-          <br />
-          The focus of the audit in this cohort was the Summa Protocol developed
-          at the{" "}
-          <a
-            href="https://pse.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-green-600 font-bold hover:underline duration-700"
-          >
-            Privacy & Scaling Explorations
-          </a>{" "}
-          group of the EF. The{" "}
-          <a
-            href="https://summa.gitbook.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-green-600 font-bold hover:underline duration-700"
-          >
-            Summa Protocol
-          </a>{" "}
-          is a blockchain-based solution for providing proof of solvency for
-          financial entities, ensuring they have sufficient assets to cover
-          their liabilities. It leverages cryptographic techniques with the aim
-          to verify solvency transparently and securely, and without revealing
-          sensitive personal financial data.
-          <br />
-          <br />
-          This audit took 120 days to complete, covering two versions of the
-          Summa protocol. During the cohort, fellows also developed new Halo2
-          tooling and enhanced the usability of existing tools by improving the
-          documentation and code for projects like Polyexen-demo and
-          Halo2-analyzer. At the end of the audit, exceptional fellows were
-          awarded for their outstanding contributions and performance throughout
-          the cohort.
-        </p>
+        <div className="grid grid-cols-5">
+          <div className="col-span-2">
+            <img src="./cross.svg" className="h-[24rem]" />
+          </div>
+          <div className="col-span-3">
+            <p className="text-gray-600 text-justify">
+              From Jan 2024 to May 2024, we held our second zero-knowledge
+              auditing fellowship centered around the PSE-Halo2 development
+              framework and the KZG commitment scheme. Participants engaged in
+              hands-on exercises, sync and async discussions, and technical
+              sessions by devs, auditors, and distinguished guests.
+              <br />
+              <br />
+              The focus of the audit in this cohort was the Summa Protocol
+              developed at the{" "}
+              <a
+                href="https://pse.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 font-bold hover:underline duration-700"
+              >
+                Privacy & Scaling Explorations
+              </a>{" "}
+              group of the EF. The{" "}
+              <a
+                href="https://summa.gitbook.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 font-bold hover:underline duration-700"
+              >
+                Summa Protocol
+              </a>{" "}
+              is a blockchain-based solution for providing proof of solvency for
+              financial entities, ensuring they have sufficient assets to cover
+              their liabilities. It leverages cryptographic techniques with the
+              aim to verify solvency transparently and securely, and without
+              revealing sensitive personal financial data.
+              <br />
+              <br />
+              This audit took 120 days to complete, covering two versions of the
+              Summa protocol. During the cohort, fellows also developed new
+              Halo2 tooling and enhanced the usability of existing tools by
+              improving the documentation and code for projects like
+              Polyexen-demo and Halo2-analyzer. At the end of the audit,
+              exceptional fellows were awarded for their outstanding
+              contributions and performance throughout the cohort.
+            </p>
+          </div>
+        </div>
+
         <h1 className="text-4xl font-bold text-center mt-40" id="module-1">
           Module 1
         </h1>
