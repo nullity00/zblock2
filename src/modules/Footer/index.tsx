@@ -53,7 +53,7 @@ export default function Footer() {
         <Icon
           src="snapshot.png"
           alt="Snapshot"
-          href="https://snapshot.org/"
+          href="https://snapshot.org/#/yacademy.eth"
           width="25"
         />
         <Icon
