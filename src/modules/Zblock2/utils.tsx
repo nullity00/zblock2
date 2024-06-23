@@ -13,10 +13,7 @@ export const VideoSection = ({
   return (
     <div className="flex flex-col bg-[#E8FFF8] my-6 rounded-lg ">
       {videoData.map((video) => (
-        <div
-          key={video.id}
-          className="p-4 duration-700"
-        >
+        <div key={video.id} className="p-4 duration-700">
           <div className="flex flex-row justify-between">
             <div className="flex flex-row items-center gap-4">
               <img src="/youtube.svg" className="h-[1rem]" />
@@ -54,7 +51,7 @@ export const Notes = ({
   notes: { title: string; link: string };
 }) => {
   return (
-    <>
+    <div className="flex flex-row gap-4 items-center">
       <img src="/notes.svg" className="h-[2rem]" />
       <a
         href={notes.link}
@@ -64,7 +61,23 @@ export const Notes = ({
       >
         {notes.title}
       </a>
-    </>
+    </div>
+  );
+};
+
+export const Quiz = ({ quiz }: { quiz: { title: string; link: string } }) => {
+  return (
+    <div className="flex flex-row gap-4 items-center">
+      <img src="/exercise.svg" className="h-[2rem]" />
+      <a
+        href={quiz.link}
+        className="hover:underline font-bold"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {quiz.title}
+      </a>
+    </div>
   );
 };
 

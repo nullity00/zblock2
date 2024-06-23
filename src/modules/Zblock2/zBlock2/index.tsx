@@ -2,15 +2,18 @@ import {
   m1video,
   m1guestLectures,
   m1discussion,
+  m1notes,
+  m1exercises,
   m1report,
 } from "../Data/zblock2";
 import {
   m2discussion,
   m2guestLectures,
   m2video,
+  m2notes,
   m2report,
 } from "../Data/zblock2";
-import { Discussion, VideoSection, Report } from "../utils";
+import { Discussion, VideoSection, Report, Quiz, Notes } from "../utils";
 import Lottie from "lottie-react";
 import logo from "./logo.json";
 
@@ -34,10 +37,13 @@ function ZBlock2Modules() {
         </div>
       </div>
       <div className="mr-32">
-        <h1 className="text-4xl font-bold text-center mt-40 mb-20" id="module-1">
+        <h1
+          className="text-5xl font-bold text-center mt-40 mb-20"
+          id="module-1"
+        >
           In a nutshell ...
         </h1>
-        <p className="text-gray-600 text-justify mx-24">
+        <p className="text-gray-600 text-justify mx-16">
           From Jan 2024 to May 2024, we held our second zero-knowledge auditing
           fellowship centered around the PSE-Halo2 development framework and the
           KZG commitment scheme. Participants engaged in hands-on exercises,
@@ -88,15 +94,27 @@ function ZBlock2Modules() {
               Sessions
             </h1>
             <VideoSection videoData={m1video} />
-          </div>
-          <div className="col-span-1">
             <h1 className="text-2xl font-bold">Guest Lectures</h1>
             <VideoSection videoData={m1guestLectures} />
+          </div>
+          <div className="col-span-1">
             <h1 id="discussion1" className="text-2xl font-bold mb-4">
               Discussion
             </h1>
             <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
               <Discussion chat={m1discussion} />
+            </div>
+            <h1 className="text-2xl font-bold my-4">Supplimentary Materials</h1>
+            <div className="flex flex-col gap-6 p-4 items-left rounded-2xl bg-[#E8FFF8]">
+              {m1notes.map((exercise) => {
+                return <Notes notes={exercise} />;
+              })}
+            </div>
+            <h1 className="text-2xl font-bold my-4">Exercises</h1>
+            <div className="flex flex-col gap-6 p-4 items-left rounded-2xl bg-[#E8FFF8]">
+              {m1exercises.map((exercise) => {
+                return <Quiz quiz={exercise} />;
+              })}
             </div>
             <h1 className="text-2xl font-bold my-4">Audit Reports</h1>
             <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
@@ -112,16 +130,22 @@ function ZBlock2Modules() {
           <div className="col-span-1">
             <h1 className="text-2xl font-bold">Sessions</h1>
             <VideoSection videoData={m2video} />
+            <h1 className="text-2xl font-bold my-4">Supplimentary Materials</h1>
+            <div className="flex flex-col gap-6 p-4 items-left rounded-2xl bg-[#E8FFF8]">
+              {m2notes.map((exercise) => {
+                return <Notes notes={exercise} />;
+              })}
+            </div>
+          </div>
+          <div className="col-span-1">
+            <h1 className="text-2xl font-bold">Guest Lectures</h1>
+            <VideoSection videoData={m2guestLectures} />
             <h1 id="discussion1" className="text-2xl font-bold mb-4">
               Discussion
             </h1>
             <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
               <Discussion chat={m2discussion} />
             </div>
-          </div>
-          <div className="col-span-1">
-            <h1 className="text-2xl font-bold">Guest Lectures</h1>
-            <VideoSection videoData={m2guestLectures} />
 
             <h1 className="text-2xl font-bold my-4">Audit Reports</h1>
             <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
