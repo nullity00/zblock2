@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 export function Navbar() {
   return (
-    <div className="flex h-32 items-center justify-center top-0 p-6 lg:ml-36">
+    <div className="flex h-32 items-center justify-center top-0 p-6 lg:ml-24">
       <Link to={"/"}>
         <img src="/logo.svg" className="h-16" />
       </Link>
