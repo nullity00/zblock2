@@ -112,7 +112,7 @@ function ZBlock2Modules() {
             <div className="flex flex-row gap-4 p-4 items-center rounded-2xl bg-[#E8FFF8]">
               <Discussion chat={m1discussion} />
             </div>
-            <h1 className="text-2xl font-bold my-4">Supplimentary Materials</h1>
+            <h1 className="text-2xl font-bold my-4">Supplementary Materials</h1>
             <div className="flex flex-col gap-6 p-4 items-left rounded-2xl bg-[#E8FFF8]">
               {m1notes.map((exercise) => {
                 return <Notes notes={exercise} />;
@@ -138,7 +138,7 @@ function ZBlock2Modules() {
           <div className="col-span-1">
             <h1 className="text-2xl font-bold">Sessions</h1>
             <VideoSection videoData={m2video} />
-            <h1 className="text-2xl font-bold my-4">Supplimentary Materials</h1>
+            <h1 className="text-2xl font-bold my-4">Supplementary Materials</h1>
             <div className="flex flex-col gap-6 p-4 items-left rounded-2xl bg-[#E8FFF8]">
               {m2notes.map((exercise) => {
                 return <Notes notes={exercise} />;
