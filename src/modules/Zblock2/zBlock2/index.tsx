@@ -100,6 +100,17 @@ function ZBlock2Modules() {
               exceptional fellows were awarded for their outstanding
               contributions and performance throughout the cohort.
             </p>
+            <p className="mt-4 font-semibold">
+              See also :{" "}
+              <a
+                href="https://yacademy.dev/fellowships/zBlock1/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:underline duration-700"
+              >
+                zBlock1
+              </a>
+            </p>
           </div>
         </div>
         <h1
@@ -207,6 +218,10 @@ function ZBlock2Modules() {
               })}
             </ul>
           </div>
+        </div>
+        <div className="flex flex-col gap-4 justify-center text-zinc-800 text-center mt-12">
+          <h4 className="text-xl font-semibold">Supported by </h4>
+          <img src="./ef.svg" className="h-16 inline-block" />
         </div>
 
         <h1 className="text-4xl font-bold text-center mt-40" id="module-1">
