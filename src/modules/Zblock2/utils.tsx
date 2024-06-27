@@ -120,3 +120,19 @@ export const Discussion = ({
     </>
   );
 };
+
+export const Trophy = ({ trophy }: { trophy: { title: string; link: string } }) => {
+  return (
+    <div className="flex flex-row gap-4 items-center">
+      <img src="/trophy.svg" className="h-[1.7rem]" />
+      <a
+        href={trophy.link}
+        className="hover:underline font-bold"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {trophy.title}
+      </a>
+    </div>
+  );
+};

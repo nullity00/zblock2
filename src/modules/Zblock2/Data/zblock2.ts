@@ -49,7 +49,7 @@ export const m1video = [
   },
   {
     id: "jSEvIHmAke0",
-    title: "Office Hours",
+    title: "Office Hours I",
     description: "",
     link: "https://drive.google.com/drive/folders/1R2uQ6M7AeUH8VvLOJRTUVZUpkY1Y6x9a?usp=drive_link",
   },
@@ -80,6 +80,17 @@ export const m1discussion = {
   link: "https://discord.com/channels/877252171983360072/1195123409739337779",
 };
 
+export const m1bounties = [
+  {
+    title: "Bounty : Showcasing concision with accuracy",
+    link: "https://sweltering-bill-f01.notion.site/Bounty-Showcasing-concision-with-accuracy-e513a5406026470e88d45f8154c8095b?pvs=74",
+  },
+  {
+    title: "Bounty : Security Analysis of Summa",
+    link: "https://sweltering-bill-f01.notion.site/Bounty-Security-Analysis-of-Summa-b6166867c40d447bb0a495dcb0526d95",
+  },
+];
+
 export const m1exercises = [
   {
     title: "Warmup quiz",
@@ -94,17 +105,17 @@ export const m1exercises = [
 export const m1notes = [
   {
     title: "ZK in Context",
-    link: "https://sweltering-bill-f01.notion.site/ZK-in-Context-6680e79db90647f48475170cfdd0aa2b"
+    link: "https://sweltering-bill-f01.notion.site/ZK-in-Context-6680e79db90647f48475170cfdd0aa2b",
   },
   {
     title: "Digging Into Halo2",
-    link: "https://sweltering-bill-f01.notion.site/Digging-Into-Halo2-2e847285a04f4062a3f08950b1629577"
+    link: "https://sweltering-bill-f01.notion.site/Digging-Into-Halo2-2e847285a04f4062a3f08950b1629577",
   },
   {
     title: "All About Summa Solvency",
-    link: "https://sweltering-bill-f01.notion.site/All-about-Summa-Solvency-68c4d5c7a85649739a4006f7b77e7d73"
-  }
-]
+    link: "https://sweltering-bill-f01.notion.site/All-about-Summa-Solvency-68c4d5c7a85649739a4006f7b77e7d73",
+  },
+];
 
 export const m1report = {
   title: "Summa Va Audit Report",
@@ -141,19 +152,19 @@ export const m2video = [
 export const m2guestLectures = [
   {
     id: "2bEiNcfkxBQ",
-    title: "KZG",
+    title: "KZG by Adrià Torralba-Agell",
     description: "",
     link: "https://drive.google.com/drive/folders/1aD0u0fPyRkmZFya3sq80n0WCWi66RByX?usp=drive_link",
   },
   {
     id: "yZ9NJ9x75iY",
-    title: "Axiom V2",
+    title: "Axiom V2 by Yi Sun",
     description: "",
     link: "https://drive.google.com/drive/folders/1iQVFMVLLD5VqQjHUZiRurwzvBrV7E2sY?usp=drive_link",
   },
   {
     id: "KLq3dwlu2xw",
-    title: "PowdrVM",
+    title: "PowdrVM by Leonardo Alt",
     description: "",
     link: "https://drive.google.com/drive/folders/15BMnPT3rf5mmUdD8qCCtQ4fP98AaOuU2?usp=drive_link",
   },
@@ -173,15 +184,141 @@ export const m2discussion = {
 export const m2notes = [
   {
     title: "In Rust We Trust",
-    link: "https://sweltering-bill-f01.notion.site/In-Rust-we-Trust-07ffbdbb778b4a2788c746d6c9f98175"
+    link: "https://sweltering-bill-f01.notion.site/In-Rust-we-Trust-07ffbdbb778b4a2788c746d6c9f98175",
   },
   {
     title: "KZG Commitment Scheme",
-    link: "https://sweltering-bill-f01.notion.site/KZG-c8ba0547e82c495c86a991c53ac0163b"
-  }
-]
+    link: "https://sweltering-bill-f01.notion.site/KZG-c8ba0547e82c495c86a991c53ac0163b",
+  },
+];
 
 export const m2report = {
   title: "Summa Vb Audit Report",
   link: "https://github.com/zBlock-2/audit-report/blob/main/versionB.md",
 };
+
+export const m2bounties = {
+  title: "The Fellows’ Chronicles",
+  link: "https://sweltering-bill-f01.notion.site/The-Fellows-Chronicles-6d1fe2b648904b3f86a61f308467edde",
+};
+
+export const yacteam = [
+  {
+    name: "0xnagu",
+    github: "https://github.com/thogiti",
+  },
+  {
+    name: "Ali",
+    github: "https://github.com/0xalizk",
+  },
+  {
+    name: "Igor Line",
+    github: "https://github.com/igorline",
+  },
+  {
+    name: "Invader",
+    github: "",
+  },
+  {
+    name: "nullity",
+    github: "https://github.com/nullity00",
+  },
+  {
+    name: "Oba",
+    github: "https://github.com/obatirou",
+  },
+  {
+    name: "parsley",
+    github: "https://github.com/bbresearcher",
+  },
+];
+
+export const fellows = [
+  {
+    name: "0xpanicError",
+    github: "https://github.com/0xpanicError",
+    isResident: false,
+  },
+  {
+    name: "Flying Nobita",
+    github: "https://github.com/flyingnobita",
+  },
+  {
+    name: "Hrishikesh Bhat",
+    github: "https://github.com/hrishibhat",
+  },
+  {
+    name: "Hyunmin Lee",
+    github: "https://github.com/qpzm",
+  },
+  {
+    name: "Karl Yu",
+    github: "https://github.com/0xkarl98",
+  },
+  {
+    name: "Pia",
+    github: "https://github.com/rkdud007",
+  },
+  {
+    name: "qn",
+    github: "https://github.com/zeroqn",
+  },
+  {
+    name: "Sachin D Agarwal",
+    github: "https://github.com/sachindkagrawal15",
+  },
+  {
+    name: "Sebastian T F",
+    github: "https://github.com/sebastiantf",
+  },
+  {
+    name: "teddav",
+    github: "https://github.com/teddav/",
+  },
+  {
+    name: "yagnadeep",
+    github: "https://github.com/yagnadeepxo",
+  },
+  {
+    name: "Yash",
+    github: "https://github.com/Y5Yash",
+  },
+];
+
+export const summateam = [
+  {
+    name: "Alex Kuzmin",
+    github: "https://github.com/alxkzmn",
+  },
+  {
+    name: "Enrico Bottazzi",
+    github: "https://github.com/enricobottazzi",
+  },
+  {
+    name: "Jin S",
+    github: "https://github.com/sifnoc",
+  },
+];
+
+export const guest = [
+  {
+    name: "Adrià Torralba-Agell",
+    github: "https://github.com/0xAdriaTorralba",
+  },
+  {
+    name: "Leonardo Alt",
+    github: "https://github.com/leonardoalt",
+  },
+  {
+    name: "rkm0959",
+    github: "https://github.com/rkm0959",
+  },
+  {
+    name: "Ying Tong",
+    github: "https://github.com/therealyingtong",
+  },
+  {
+    name: "Yi Sun",
+    github: "https://github.com/yi-sun",
+  },
+];
