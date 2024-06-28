@@ -247,10 +247,7 @@ export const fellows = [
     name: "Hrishikesh Bhat",
     github: "https://github.com/hrishibhat",
   },
-  {
-    name: "Hyunmin Lee",
-    github: "https://github.com/qpzm",
-  },
+  
   {
     name: "Karl Yu",
     github: "https://github.com/0xkarl98",
@@ -264,7 +261,11 @@ export const fellows = [
     github: "https://github.com/zeroqn",
   },
   {
-    name: "Sachin D Agarwal",
+    name: "qpzm",
+    github: "https://github.com/qpzm",
+  },
+  {
+    name: "Sachin D Agrawal",
     github: "https://github.com/sachindkagrawal15",
   },
   {

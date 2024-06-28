@@ -143,7 +143,7 @@ function ZBlock2Modules() {
             <h4 className="text-xl py-4 text-center font-semibold mb-4">
               Fellows
             </h4>
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-row sm:flex-col justify-between">
               <ul className="list-disc text-zinc-700">
                 {fellows.slice(0, 6).map((member) => {
                   return (
