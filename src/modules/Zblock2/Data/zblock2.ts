@@ -296,7 +296,7 @@ export const summateam = [
     github: "https://github.com/enricobottazzi",
   },
   {
-    name: "Jin S",
+    name: "Jinhwan Shin",
     github: "https://github.com/sifnoc",
   },
 ];
