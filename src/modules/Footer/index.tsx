@@ -41,7 +41,7 @@ export default function Footer() {
         <Icon
           src="discord.png"
           alt="Discord"
-          href="https://discord.gg/xd4j4pePPm"
+          href="https://discord.gg/NVNzkuUEnn"
           width="25"
         />
         <Icon
