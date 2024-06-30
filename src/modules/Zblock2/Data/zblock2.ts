@@ -253,12 +253,8 @@ export const fellows = [
     github: "https://github.com/0xkarl98",
   },
   {
-    name: "Pia",
+    name: "Pia Park",
     github: "https://github.com/rkdud007",
-  },
-  {
-    name: "qn",
-    github: "https://github.com/zeroqn",
   },
   {
     name: "qpzm",
@@ -284,6 +280,10 @@ export const fellows = [
     name: "Yash",
     github: "https://github.com/Y5Yash",
   },
+	{
+		name: "zeroqn",
+		github: "https://github.com/zeroqn",
+	}
 ];
 
 export const summateam = [
