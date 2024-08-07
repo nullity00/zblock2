@@ -47,12 +47,12 @@ function ZBlock2Modules() {
         </div>
       </div>
       <div className="lg:mr-32">
-        <h1
+        {/* <h1
           className="text-4xl  font-bold text-center mt-40 mb-20"
           id="module-1"
         >
           In a nutshell,
-        </h1>
+        </h1> */}
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2">
             <img src="./cross.svg" className="h-[24rem]" />
